@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Durak</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Ubuntu+Condensed" rel="stylesheet" type="text/css">
+    <script src='https://cdn.firebase.com/js/client/2.4.0/firebase.js'></script>
+</head>
+<body>
+<div id="container">
+    <div id="player1" class="player"><div class="cards-container"></div></div>
+
+    <div id="deck" class="deck"></div>
+
+    <div id="turn_cards"><div class="cards-container"></div></div>
+
+    <div id="player2" class="player"><div class="cards-container"></div></div>
+
+    <button id="join_game" class="center-button" onclick="joinToGame()">Join to game</button>
+    <button id="finish_turn" class="center-button" onclick="finishTurn()">Finish the turn</button>
+    <button id="take_cards" class="center-button" onclick="takeCards()">Take the cards</button>
+</div>
+<div id="statusbar">
+    <p id="statustext"></p>
+    <button id="reset_game" onclick="resetGame()">Reset game</button>
+</div>
+<script src='./app.js'></script>
+</body>
+</html>
